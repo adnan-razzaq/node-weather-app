@@ -2,9 +2,7 @@ const express = require("express");
 const path = require("path");
 var hbs = require("hbs");
 const geocode = require("./utils/geocode");
-const forcast = require("./utils/forecast");
-const { query } = require("express");
-const forecast = require("../../weather-app/utils/forecast");
+const forecast = require("./utils/forecast");
 
 //path manipulation
 /* console.log(__dirname);
