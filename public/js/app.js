@@ -8,7 +8,7 @@ const msg2 = document.getElementById("msg2");
 form.addEventListener("submit", (e) => {
   e.preventDefault();
   const val = search.value;
-  const url = `http://localhost:3000/weather?address=${val}`;
+  const url /weather?address=${val}`;
   msg1.innerText = "Location: ";
   msg2.innerText = "Forecast: ";
   fetch(url)

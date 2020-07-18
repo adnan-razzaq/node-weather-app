@@ -18,6 +18,7 @@ const viewspath = path.join(__dirname, "../templates/views");
 const partialpath = path.join(__dirname, "../templates/partials");
 
 const app = express();
+const port = process.env.PORT || 3000;
 
 //handlebars setup
 app.set("view engine", "hbs");
@@ -114,4 +115,4 @@ app.get("*", (req, res) => {
     errorMessage: "Page not found",
   });
 });
-app.listen(3000, console.log("server is running at port 3000"));
+app.listen(port, console.log("server is running at port 3000"));
